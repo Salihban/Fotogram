@@ -5,7 +5,7 @@ const imgSet = [
 "./assets/img/pic4.jpg",
 "./assets/img/pic5.jpg",
 "./assets/img/pic6.jpg",
-"./assets/img/pic7.jpg",
+"./assets/img/pic7.png",
 "./assets/img/pic8.jpg",
 "./assets/img/pic9.jpg",
 "./assets/img/pic10.jpg",
