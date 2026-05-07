@@ -7,3 +7,27 @@
     font-size: inherit;
     scroll-behavior: smooth;
 }
+
+head{
+    background-color: #09212A;
+}
+
+.headline{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 81px;
+    width: 100%;
+    gap: 8px;
+    padding: 20px 140px;
+
+
+    color: white;
+    background-color: #09212A;
+
+    .p{
+        font-size: 24px;
+    }
+}
+
