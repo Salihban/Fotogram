@@ -44,8 +44,18 @@ main{
         font-size: 48px;
         color: white;
     }
+
+    .gallery{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
 }
 
+#img-collectiv img{
+    height: 150px;
+    width: 150px;
+}
 
 
 
