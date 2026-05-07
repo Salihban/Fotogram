@@ -44,12 +44,11 @@ head{
     background-color: #09212A;
     color: white;
 
-    .footer-top{
-        display: flex;
-        align-items: center;
-        
-        gap: 8px;   
-    }
+   .footer-top{
+    display: flex;
+
+    gap: 8px;
+   }
 }
 
 
