@@ -96,7 +96,7 @@ footer{
 
 @media screen and (min-width: 1440px) {
     
-    head{
+    header{
         padding: 0px max(20px 120px calc(50% - 720px));
     }
 

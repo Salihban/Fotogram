@@ -22,3 +22,10 @@ function render() {
         `;
     }
 }
+
+
+const dialogRef = document.getElementById("imgs-window")
+
+function openDialog() {
+    dialogRef.showModal();
+}
