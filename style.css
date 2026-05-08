@@ -57,6 +57,7 @@ align-items: center;
         justify-content: center;
         align-items: center;
         gap: 56px;
+        
     }
 }
 
@@ -69,8 +70,9 @@ align-items: center;
 
 
 
-
-
+footer{
+    background-color: #09212A;
+}
 
 .footer-content{
     display: flex;
@@ -92,6 +94,21 @@ align-items: center;
    }
 }
 
+
+@media screen and (min-width: 1440px) {
+    
+    head{
+        padding: 0px max(20px 120px calc(50% - 720px));
+    }
+
+    main{
+        padding: 80px max(calc(50% - 720px));
+    }
+
+    footer{
+        padding: 0px max(calc(50% - 720px));
+    }
+}
 
 
 
