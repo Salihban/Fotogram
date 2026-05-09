@@ -12,8 +12,12 @@ const imgSet = [
 "./assets/img/pic11.jpg",
 "./assets/img/pic12.jpg",
 ];
+const dialogRef = document.getElementById("imgs-window");
 const contentRef = document.getElementById('img-collectiv');
 const ondialog = document.getElementById('dialogImg');
+let currentNow = 0
+
+
 
 function render() {
     
@@ -24,8 +28,6 @@ function render() {
     }
 }
 
-
-const dialogRef = document.getElementById("imgs-window");
 
 function openDialog(k) {
     dialogImg.innerHTML = `<img src="${imgSet[k]}">`;
