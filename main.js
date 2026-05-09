@@ -26,7 +26,11 @@ function render() {
 
 const dialogRef = document.getElementById("imgs-window");
 
-function openDialog(index) {
+function openDialog() {
     dialogRef.showModal();
+}
+
+function closeDialog() {
+    dialogRef.close();
 }
 
