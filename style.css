@@ -95,12 +95,29 @@ footer{
 
 dialog{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     height: 550px;
     width: 550px;
 
     background-color: #09212A;
     border-radius: 40px;
+
+    header{
+        display: flex;
+        justify-content: space-between;
+
+        width: 450px;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+
+        width: 300px;
+    }
 }
 
 
