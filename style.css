@@ -93,6 +93,15 @@ footer{
    }
 }
 
+dialog{
+    display: flex;
+
+    height: 550px;
+    width: 550px;
+
+    background-color: #09212A;
+}
+
 
 @media screen and (min-width: 1440px) {
     
