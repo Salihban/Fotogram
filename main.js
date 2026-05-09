@@ -38,6 +38,15 @@ if (currentNow >= imgSet.length){
 dialogImg.innerHTML = `<img src="${imgSet[currentNow]}">`;
 }
 
+function bLeft() {
+currentNow--;
+if (currentNow >= imgSet.length){
+    currentNow = 0;
+}
+
+dialogImg.innerHTML = `<img src="${imgSet[currentNow]}">`;
+}
+
 function openDialog(k) {
     dialogImg.innerHTML = `<img src="${imgSet[k]}">`;
     dialogRef.showModal();
