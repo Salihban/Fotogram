@@ -28,6 +28,9 @@ function render() {
     }
 }
 
+function bRight() {
+    
+}
 
 function openDialog(k) {
     dialogImg.innerHTML = `<img src="${imgSet[k]}">`;
