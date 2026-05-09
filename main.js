@@ -13,12 +13,13 @@ const imgSet = [
 "./assets/img/pic12.jpg",
 ];
 const contentRef = document.getElementById('img-collectiv');
+const ondialog = document.getElementById('dialogImg');
 
 function render() {
     
     for(let i = 0; i < imgSet.length; i++) {
         contentRef.innerHTML += /*html*/ `
-            <img src="${imgSet[i]}" alt="">
+            <img onclick="openDialog(${i})" src="${imgSet[i]}" alt="">
         `;
     }
 }
@@ -26,12 +27,11 @@ function render() {
 
 const dialogRef = document.getElementById("imgs-window");
 
-function openDialog() {
+function openDialog(k) {
+    dialogImg.innerHTML = `<img src="${imgSet[k]}">`;
     dialogRef.showModal();
 }
 
 function closeDialog() {
     dialogRef.close();
 }
-
-
