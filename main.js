@@ -12,6 +12,7 @@ const imgSet = [
 "./assets/img/pic11.jpg",
 "./assets/img/pic12.jpg",
 ];
+
 const dialogRef = document.getElementById("imgs-window");
 const contentRef = document.getElementById('img-collectiv');
 const ondialog = document.getElementById('dialogImg');
@@ -29,7 +30,12 @@ function render() {
 }
 
 function bRight() {
-    
+currentNow++;
+if (currentNow >= imgSet.length){
+    currentNow = 0;
+}
+
+dialogImg.innerHTML = `<img src="${imgSet[currentNow]}">`;
 }
 
 function openDialog(k) {
