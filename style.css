@@ -99,17 +99,18 @@ dialog{
     justify-content: center;
     align-items: center;
 
-    height: 550px;
-    width: 550px;
+    height: 600px;
+    width: 600px;
 
     background-color: #09212A;
     border-radius: 40px;
+    border: solid rgba(9, 33, 42, 1);
+    column-gap: 24px;
 
     header{
         display: flex;
-        justify-content: space-between;
-
-        width: 450px;
+        justify-content: space-around;
+        align-items: center;
     }
     
     header img{
@@ -117,11 +118,23 @@ dialog{
         width: 32px;
     }
 
+    #dialogImg img{
+        height: 400px;
+        width: 500px;
+    }
+
+    #dialogImg{
+        display: flex;
+        justify-content: center;
+    }
+
     footer{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
 
-        width: 300px;
+        font-size: 16px;
+        gap: 40px;
     }
 }
 
