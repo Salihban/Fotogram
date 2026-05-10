@@ -30,7 +30,7 @@ function render() {
 }
 
 function bRight() {
-currentNow++;
+    currentNow++;
 if (currentNow >= imgSet.length){
     currentNow = 0;
 }
@@ -39,7 +39,7 @@ dialogImg.innerHTML = `<img src="${imgSet[currentNow]}">`;
 }
 
 function bLeft() {
-currentNow--;
+    currentNow--;
 if (currentNow >= imgSet.length){
     currentNow = 0;
 }
