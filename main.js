@@ -16,7 +16,7 @@ const imgSet = [
 const dialogRef = document.getElementById("imgs-window");
 const contentRef = document.getElementById('img-collectiv');
 const ondialog = document.getElementById('dialogImg');
-let currentNow = 0
+let currentNow = 0;
 
 
 
@@ -40,8 +40,8 @@ dialogImg.innerHTML = `<img src="${imgSet[currentNow]}">`;
 
 function bLeft() {
     currentNow--;
-if (currentNow >= imgSet.length){
-    currentNow = 0;
+if (currentNow < 0){
+    currentNow = 11;
 }
 
 dialogImg.innerHTML = `<img src="${imgSet[currentNow]}">`;
