@@ -16,6 +16,7 @@ const imgSet = [
 const dialogRef = document.getElementById("imgs-window");
 const contentRef = document.getElementById('img-collectiv');
 const ondialog = document.getElementById('dialogImg');
+const counterRef = document.getElementById('counter');
 let currentNow = 0;
 
 
@@ -45,6 +46,10 @@ if (currentNow < 0){
 }
 
 dialogImg.innerHTML = `<img src="${imgSet[currentNow]}">`;
+}
+
+function counter(){
+    
 }
 
 function openDialog(k) {

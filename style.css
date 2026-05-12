@@ -153,3 +153,38 @@ dialog{
         padding: 0px max(calc(50% - 720px));
     }
 }
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0px;
+
+        .headline{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+    
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        width: 100%;
+        padding: 0px;
+
+        .gallery{
+            width: 315px;
+        }
+    }
+}
