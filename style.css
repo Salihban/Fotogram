@@ -56,7 +56,9 @@ align-items: center;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
         gap: 56px;
+        width: 1170px;
     }
 }
 
@@ -154,6 +156,38 @@ dialog{
     }
 }
 
+@media screen and (min-width: 601px) (max-width: 1024px){
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0px;
+
+        .headline{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        width: 100%;
+        padding: 0px;
+
+        .gallery{
+            width: 601px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+}
+}
 
 
 
