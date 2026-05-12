@@ -17,6 +17,8 @@ const dialogRef = document.getElementById("imgs-window");
 const contentRef = document.getElementById('img-collectiv');
 const ondialog = document.getElementById('dialogImg');
 const counterRef = document.getElementById('counter');
+const titelRef = document.getElementById('imgTitel');
+const refList = document.getElementsByClassName('imgSet');
 let currentNow = 0;
 
 
@@ -28,6 +30,14 @@ function render() {
             <img onclick="openDialog(${i})" src="${imgSet[i]}" alt="">
         `;
     }
+}
+
+function imgTitel(){
+for(let j = 0; j < refList.length; j++){
+    titelRef.innerHTML += /*html*/ `
+            <p></p>
+        `;
+}
 }
 
 function bRight() {
@@ -48,9 +58,6 @@ if (currentNow < 0){
 dialogImg.innerHTML = `<img src="${imgSet[currentNow]}">`;
 }
 
-function counter(){
-    
-}
 
 function openDialog(k) {
     dialogImg.innerHTML = `<img src="${imgSet[k]}">`;
