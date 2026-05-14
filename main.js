@@ -40,13 +40,18 @@ for(let j = 0; j < refList.length; j++){
 }
 }
 
+function dialogContent(index){
+    dialogImg.innerHTML = `<img src="${imgSet[index]}">`;
+    titelRef.innerHTML = `<p>"${imgSet[index]}"</p>`;
+    counterRef.innerHTML =`<p>${index}/${imgSet.length}</p>`;
+}
+
 function bRight() {
     currentNow++;
 if (currentNow >= imgSet.length){
     currentNow = 0;
 }
-
-dialogImg.innerHTML = `<img src="${imgSet[currentNow]}">`;
+    dialogContent(currentNow); 
 }
 
 function bLeft() {
@@ -54,13 +59,13 @@ function bLeft() {
 if (currentNow < 0){
     currentNow = 11;
 }
-
-dialogImg.innerHTML = `<img src="${imgSet[currentNow]}">`;
+    dialogContent(currentNow); 
 }
 
 
+
 function openDialog(k) {
-    dialogImg.innerHTML = `<img src="${imgSet[k]}">`;
+    dialogContent(k); 
     dialogRef.showModal();
 }
 
