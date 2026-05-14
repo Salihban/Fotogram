@@ -1,16 +1,16 @@
 const imgSet = [
-"./assets/img/pic1.jpg",
-"./assets/img/pic2.jpg",
-"./assets/img/pic3.jpg",
-"./assets/img/pic4.jpg",
-"./assets/img/pic5.jpg",
-"./assets/img/pic6.jpg",
-"./assets/img/pic7.png",
-"./assets/img/pic8.jpg",
-"./assets/img/pic9.jpg",
-"./assets/img/pic10.jpg",
-"./assets/img/pic11.jpg",
-"./assets/img/pic12.jpg",
+"pic1.jpg",
+"pic2.jpg",
+"pic3.jpg",
+"pic4.jpg",
+"pic5.jpg",
+"pic6.jpg",
+"pic7.png",
+"pic8.jpg",
+"pic9.jpg",
+"pic10.jpg",
+"pic11.jpg",
+"pic12.jpg",
 ];
 
 const dialogRef = document.getElementById("imgs-window");
@@ -27,7 +27,7 @@ function render() {
     
     for(let i = 0; i < imgSet.length; i++) {
         contentRef.innerHTML += /*html*/ `
-            <img onclick="openDialog(${i})" src="${imgSet[i]}" alt="">
+            <img onclick="openDialog(${i})" src="./assets/img/${imgSet[i]}" alt="">
         `;
     }
 }
@@ -41,8 +41,8 @@ for(let j = 0; j < refList.length; j++){
 }
 
 function dialogContent(index){
-    dialogImg.innerHTML = `<img src="${imgSet[index]}">`;
-    titelRef.innerHTML = `<p>"${imgSet[index]}"</p>`;
+    dialogImg.innerHTML = `<img src="./assets/img/${imgSet[index]}">`;
+    titelRef.innerHTML = `<p>${imgSet[index]}</p>`;
     counterRef.innerHTML =`<p>${index+1}/${imgSet.length}</p>`;
 }
 
