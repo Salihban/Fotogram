@@ -32,14 +32,6 @@ function render() {
     }
 }
 
-function imgTitel(){
-for(let j = 0; j < refList.length; j++){
-    titelRef.innerHTML += /*html*/ `
-            <p></p>
-        `;
-}
-}
-
 function dialogContent(index){
     dialogImg.innerHTML = `<img src="./assets/img/${imgSet[index]}">`;
     titelRef.innerHTML = `<p>${imgSet[index]}</p>`;
