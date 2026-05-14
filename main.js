@@ -43,7 +43,7 @@ for(let j = 0; j < refList.length; j++){
 function dialogContent(index){
     dialogImg.innerHTML = `<img src="${imgSet[index]}">`;
     titelRef.innerHTML = `<p>"${imgSet[index]}"</p>`;
-    counterRef.innerHTML =`<p>${index}/${imgSet.length}</p>`;
+    counterRef.innerHTML =`<p>${index+1}/${imgSet.length}</p>`;
 }
 
 function bRight() {
