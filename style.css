@@ -100,7 +100,7 @@ dialog{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 650px;
     width: 600px;
 
     background-color: #09212A;
@@ -108,10 +108,20 @@ dialog{
     border: solid rgba(9, 33, 42, 1);
     column-gap: 24px;
 
+    .dialogBox{
+        display: flex;
+        flex-direction: column;
+
+        gap: 56px;
+        height: 600px;
+        width: 600px;
+    }
+
     header{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        top: 24px;
     }
     
     header img{
@@ -127,6 +137,7 @@ dialog{
     #dialogImg{
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     footer{
@@ -136,6 +147,7 @@ dialog{
 
         font-size: 16px;
         gap: 40px;
+        bottom: 24px;
     }
 }
 
