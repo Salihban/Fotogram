@@ -21,8 +21,6 @@ const titelRef = document.getElementById('imgTitel');
 const refList = document.getElementsByClassName('imgSet');
 let currentNow = 0;
 
-
-
 function render() {
     
     for(let i = 0; i < imgSet.length; i++) {
@@ -53,8 +51,6 @@ if (currentNow < 0){
 }
     dialogContent(currentNow); 
 }
-
-
 
 function openDialog(k) {
     dialogContent(k); 
