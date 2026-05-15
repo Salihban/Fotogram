@@ -10,6 +10,8 @@
 
 header{
     background-color: #09212A;
+    width: 100%;
+    height: 8dvh;
 }
 
 .headline{
@@ -17,7 +19,7 @@ header{
     justify-content: flex-start;
     align-items: center;
 
-    height: 8dvh;
+    height: 100%;
     width: 100%;
     gap: 8px;
     padding: 20px 140px;
@@ -73,9 +75,7 @@ align-items: center;
 
 
 footer{
-    background-color: #09212A;
-
-    clip-path: ellipse(85% 100% at 50% 100%);
+    background-color: #09212A;;
 }
 
 .footer-content{
@@ -99,7 +99,7 @@ footer{
 }
 
 body{
-   background-color: rgba(6, 23, 30, 1);
+    background-color: rgba(6, 23, 30, 1);
 }
 
 dialog{
@@ -159,11 +159,12 @@ dialog{
 
     button{
         border-radius: 50%;
+        background-color: rgb(245, 191, 187);
     }
 
     button:hover{
-        background-color: rgba(253, 91, 79, 1);
-        color: rgba(168, 91, 79, 1);
+    background-color: rgb(238, 76, 64);
+
     }
 }
 
