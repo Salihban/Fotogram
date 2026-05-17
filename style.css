@@ -172,14 +172,14 @@ dialog{
 }
 
 dialog::backdrop{
-   opacity: 0.5;
-   background-color: black;
+    opacity: 0.5;
+    background-color: black;
 }
 
 @media screen and (min-width: 1440px) {
     
     header{
-        padding: 120px max(20px 120px calc(50% - 720px));
+        padding: 0px max(20px 120px calc(50% - 720px));
     }
 
     main{
@@ -191,10 +191,33 @@ dialog::backdrop{
     }
 }
 
+@media screen and (min-width: 650px) and (max-width: 1200px) {
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+        padding: 0px;
 
+        .headline{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+}
 
-@media screen and (max-width: 600px) {
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    .main-content{
+        width: 650px;
+    }
+}
+}
+
+@media screen and (max-width: 649px) {
     header{
         display: flex;
         justify-content: center;
@@ -209,18 +232,15 @@ dialog::backdrop{
         }
     }
     
-    
     main{
         display: flex;
         justify-content: center;
         align-items: center;
 
-
-        width: 100%;
         padding: 0px;
+    }
 
-        .gallery{
-            width: 315px;
-        }
+    .main-content{
+        width: 320px;
     }
 }
