@@ -171,6 +171,10 @@ dialog{
     }
 }
 
+dialog::backdrop{
+   opacity: 0.5;
+   background-color: black;
+}
 
 @media screen and (min-width: 1440px) {
     
