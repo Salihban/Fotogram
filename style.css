@@ -225,3 +225,28 @@ dialog::backdrop{
     }
 }
 
+@media screen and (min-width: 300px) and (max-width: 899px){
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .headline{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+
+    main{
+            padding: 0px;
+    .gallery{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 330px;
+        }
+    }
+}
