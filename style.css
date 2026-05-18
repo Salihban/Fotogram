@@ -219,6 +219,7 @@ dialog::backdrop{
 
     main{
         padding: 0px;
+
     .gallery{
         display: flex;
         flex-direction: column;
@@ -311,6 +312,107 @@ dialog::backdrop{
         justify-content: center;
         align-items: center;
         font-size: 16px;
+    }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .headline{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+
+    main{
+        top: 16px;
+        bottom: 24px;
+        padding: 0px;
+
+        .gallery{
+            width: 320px;
+        }
+
+        .h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #img-collectiv{
+            display: flex;
+            justify-content: center;
+        }
+
+        #img-collectiv img{
+            width: 120px;
+        }
+    }
+
+    footer{
+        top: 32px;
+    }
+
+    dialog{
+        width: 320px;
+        height: 664px;
+
+    .dialogBox{
+        width: 300px;
+        gap: 16px;
+}
+
+    header{
+        display: flex;
+        justify-content:space-around;
+        align-items: flex-start;
+        font-size: 24px;
+
+        width: 220px;
+        height: 100px;
+    }
+    
+        header img{
+        height: 32px;
+        width: 32px;
+    }
+
+    #dialogImg img{
+        height: 375px;
+        width: 220px;
+    }
+
+    #dialogImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 220px;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        gap: 24px;
+        width: 200px;
+    }
+
+    footer button{
+        width: 48px;
+        height: 48px;
+    }
+
+    footer img{
+        width: 48px;
+        height: 48px;
     }
     }
 }
