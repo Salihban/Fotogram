@@ -113,6 +113,10 @@ body{
     overflow:hidden;
 }
 
+body:has(dialog[open]) {
+    overflow-y:hidden;
+}
+
 dialog{
     margin: auto;
     flex-direction: column;
@@ -271,28 +275,42 @@ dialog::backdrop{
         top: 32px;
     }
 
-    div.Dialog{
-    margin: auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 650px;
-    width: 350px;
-
-    background-color: #09212A;
-    border-radius: 40px;
-    border: solid rgba(9, 33, 42, 1);
-    column-gap: 24px;
-    overflow: hidden;
+    dialog{
+        width: 320px;
+        height: 664px;
 
     .dialogBox{
-        height: 650px;
-        width: 400px;
+        width: 300px;
+        gap: 16px;
+}
+
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+        header img{
+        height: 32px;
+        width: 32px;
     }
 
     #dialogImg img{
-            height: 375px;
-            width: 300px;
-        }
-}
+        height: 375px;
+        width: 300px;
+    }
+
+    #dialogImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+    }
 }
