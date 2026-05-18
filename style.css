@@ -68,12 +68,19 @@ main{
     height: 150px;
     width: 150px;
     border-radius: 16px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
 }
 
 #img-collectiv{
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+}
+
+#img-collectiv img:hover{
+    border: 1px solid lightblue;
+    border-radius: 10px;
 }
 
 
@@ -179,8 +186,8 @@ dialog::backdrop{
 
 @media screen and (min-width: 1440px) {
     
-    header{
-        padding: 0px max(20px 120px calc(50% - 720px));
+    .headline{
+        padding: 20px max(calc(50% - 720px));
     }
 
     main{
@@ -263,4 +270,29 @@ dialog::backdrop{
     footer{
         top: 32px;
     }
+
+    div.Dialog{
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    width: 350px;
+
+    background-color: #09212A;
+    border-radius: 40px;
+    border: solid rgba(9, 33, 42, 1);
+    column-gap: 24px;
+    overflow: hidden;
+
+    .dialogBox{
+        height: 650px;
+        width: 400px;
+    }
+
+    #dialogImg img{
+            height: 375px;
+            width: 300px;
+        }
+}
 }
