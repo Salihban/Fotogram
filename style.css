@@ -191,3 +191,18 @@ dialog::backdrop{
         padding: 0px max(calc(50% - 720px));
     }
 }
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .headline{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+}
