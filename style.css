@@ -236,7 +236,7 @@ dialog::backdrop{
     }
 }
 
-@media screen and (min-width: 350px) and (max-width: 899px){
+@media screen and (min-width: 430px) and (max-width: 899px){
     header{
         display: flex;
         justify-content: center;
@@ -256,7 +256,7 @@ dialog::backdrop{
         padding: 0px;
 
         .gallery{
-            width: 350px;
+            width: 430px;
         }
 
         .h1{
@@ -297,7 +297,7 @@ dialog::backdrop{
 
     #dialogImg img{
         height: 375px;
-        width: 300px;
+        width: 250px;
     }
 
     #dialogImg{
