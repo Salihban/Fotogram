@@ -205,4 +205,23 @@ dialog::backdrop{
 
         }
     }
+
+    main{
+        padding: 0px;
+    .gallery{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 900px;
+
+        #img-collectiv{
+            width: 900px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    }
 }
+
