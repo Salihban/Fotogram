@@ -317,6 +317,14 @@ dialog::backdrop{
 }
 
 @media screen and (max-width: 430px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        overflow-y: auto;
+    }
+    
     header{
         display: flex;
         justify-content: center;
@@ -331,18 +339,25 @@ dialog::backdrop{
     }
 
     main{
-        top: 16px;
-        bottom: 24px;
-        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
 
         .gallery{
             width: 320px;
+            height: 80%;
+            gap: 16px;
         }
 
-        .h1{
+        h1{
             display: flex;
             justify-content: center;
             align-items: center;
+            text-align: center;
+            font-size: 32px;
         }
 
         #img-collectiv{
@@ -351,12 +366,17 @@ dialog::backdrop{
         }
 
         #img-collectiv img{
-            width: 120px;
+            width: 100px;
+            height: 100px;
         }
     }
 
     footer{
-        top: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
     }
 
     dialog{
