@@ -293,11 +293,12 @@ body{
     }
 
     dialog{
-        width: 320px;
+        width: 350px;
         height: 664px;
+        gap: 8px;
 
     .dialogBox{
-        width: 300px;
+        width: 350px;
         gap: 16px;
 }
 
@@ -305,6 +306,8 @@ body{
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        font-size: 32px;
     }
     
         header img{
@@ -313,14 +316,13 @@ body{
     }
 
     #dialogImg img{
-        height: 375px;
-        width: 250px;
+        height: 430px;
+        width: 300px;
     }
 
     #dialogImg{
         display: flex;
         justify-content: center;
-        align-items: center;
     }
 
     footer{
