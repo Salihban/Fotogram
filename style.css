@@ -191,7 +191,7 @@ dialog::backdrop{
 @media screen and (min-width: 1440px) {
     
     .headline{
-        padding: 0px max(20px calc(50% - 720px));
+        padding: 20px max(calc(50% - 720px));
     }
 
     main{
