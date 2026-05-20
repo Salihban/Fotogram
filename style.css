@@ -293,10 +293,10 @@ dialog::backdrop{
 
 @media screen and (min-width: 1440px) {
     header{
-        padding: 20px 40px (calc(50% - 720px));
+        padding: 20px max(calc(50% - 720px));
     }
 
-    main{
-        padding: 0px (calc(50% - 720px));
+    #img-collectiv{
+        padding: 0px max(calc(50% - 720px));
     }
 }
