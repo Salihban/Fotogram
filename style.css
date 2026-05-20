@@ -70,12 +70,14 @@ main{
     border-radius: 16px;
     cursor: pointer;
     transition: all 200ms ease-in-out;
+    object-fit: cover;
 }
 
 #img-collectiv{
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    object-fit: cover;
 }
 
 #img-collectiv img:hover{
@@ -176,6 +178,7 @@ dialog{
     button{
         border-radius: 50%;
         background-color: rgb(245, 191, 187);
+        cursor: pointer;
     }
 
     button:hover{
@@ -238,6 +241,10 @@ dialog::backdrop{
 }
 
 @media screen and (min-width: 430px) and (max-width: 899px){
+body{
+    overflow-y: auto;
+}
+
     header{
         display: flex;
         justify-content: center;
@@ -252,23 +259,35 @@ dialog::backdrop{
     }
 
     main{
-        top: 16px;
-        bottom: 24px;
-        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
 
         .gallery{
             width: 430px;
+            height: 80%;
+            gap: 16px;
         }
 
-        .h1{
+        h1{
             display: flex;
             justify-content: center;
             align-items: center;
+            text-align: center;
+            font-size: 32px;
         }
 
         #img-collectiv{
             display: flex;
             justify-content: center;
+        }
+
+        #img-collectiv img{
+            width: 100px;
+            height: 100px;
         }
     }
 
@@ -277,11 +296,12 @@ dialog::backdrop{
     }
 
     dialog{
-        width: 320px;
+        width: 350px;
         height: 664px;
+        gap: 8px;
 
     .dialogBox{
-        width: 300px;
+        width: 350px;
         gap: 16px;
 }
 
@@ -289,6 +309,8 @@ dialog::backdrop{
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        font-size: 32px;
     }
     
         header img{
@@ -297,14 +319,13 @@ dialog::backdrop{
     }
 
     #dialogImg img{
-        height: 375px;
-        width: 250px;
+        height: 430px;
+        width: 300px;
     }
 
     #dialogImg{
         display: flex;
         justify-content: center;
-        align-items: center;
     }
 
     footer{
@@ -317,6 +338,14 @@ dialog::backdrop{
 }
 
 @media screen and (max-width: 430px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        overflow-y: auto;
+    }
+    
     header{
         display: flex;
         justify-content: center;
@@ -326,23 +355,34 @@ dialog::backdrop{
             display: flex;
             justify-content: center;
             align-items: center;
+        }
 
+        .headline img{
+            width: 32px;
+            height: 32px;
         }
     }
 
     main{
-        top: 16px;
-        bottom: 24px;
-        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
 
         .gallery{
             width: 320px;
+            height: 80%;
+            gap: 16px;
         }
 
-        .h1{
+        h1{
             display: flex;
             justify-content: center;
             align-items: center;
+            text-align: center;
+            font-size: 32px;
         }
 
         #img-collectiv{
@@ -351,22 +391,31 @@ dialog::backdrop{
         }
 
         #img-collectiv img{
-            width: 120px;
+            width: 100px;
+            height: 100px;
         }
     }
 
     footer{
-        top: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+
+        .footer-top{
+            height: 24px;
+        }
     }
 
     dialog{
-        width: 320px;
-        height: 664px;
+    width: 350px;
 
     .dialogBox{
-        width: 300px;
-        gap: 16px;
-}
+        width: 320px;
+        height: 600px;
+        gap: 24px;
+    }
 
     header{
         display: flex;
@@ -375,7 +424,6 @@ dialog::backdrop{
         font-size: 24px;
 
         width: 220px;
-        height: 100px;
     }
     
         header img{
@@ -403,16 +451,17 @@ dialog::backdrop{
         font-size: 16px;
         gap: 24px;
         width: 200px;
+        top: 8px;
     }
 
     footer button{
-        width: 48px;
-        height: 48px;
+        width: 40px;
+        height: 40px;
     }
 
     footer img{
-        width: 48px;
-        height: 48px;
+        width: 40px;
+        height: 40px;
     }
     }
 }
