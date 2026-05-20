@@ -162,6 +162,10 @@ dialog{
 
         width: 70%;
     }
+
+    #imgTitel{
+        font-size: 24px;
+    }
     
     header img{
         height: 32px;
@@ -181,8 +185,11 @@ dialog{
 
     footer{
         display: flex;
+        justify-content: space-between;
         align-items: center;
+
         gap: 30px;
+        width: 70%;
     }
 
     button{
