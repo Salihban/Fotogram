@@ -289,6 +289,12 @@ dialog::backdrop{
     background-color: rgb(85, 43, 40);
     }
 }
+
+main{
+    h1{
+        font-size: 48px;
+    }
+}
 }
 
 @media screen and (min-width: 1440px) {
