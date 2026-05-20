@@ -61,7 +61,8 @@ main{
         flex-direction: column;
         justify-content: center;
 
-        width: 320px;
+        margin-top: 56px;
+        width: 100%;
     }
 
     h1{
@@ -74,6 +75,7 @@ main{
 
 #img-collectiv{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 16px;
     object-fit: cover;
@@ -215,3 +217,4 @@ dialog::backdrop{
     opacity: 0.5;
     background-color: black;
 }
+
