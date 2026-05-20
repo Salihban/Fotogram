@@ -21,14 +21,8 @@ header{
 
 .headline{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-
-    height: 100%;
-    width: 100%;
-    gap: 8px;
-    padding: 20px 140px;
-
 
     color: white;
     background-color: #09212A;
