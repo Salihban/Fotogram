@@ -283,11 +283,13 @@ body{
         #img-collectiv{
             display: flex;
             justify-content: center;
+            object-fit: cover;
         }
 
         #img-collectiv img{
             width: 100px;
             height: 100px;
+            object-fit: cover;
         }
     }
 
@@ -337,11 +339,12 @@ body{
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 429px) {
     body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: auto;
 
         overflow-y: auto;
     }
@@ -409,7 +412,8 @@ body{
     }
 
     dialog{
-    width: 350px;
+    width: 320px;
+    height: 600px;
 
     .dialogBox{
         width: 320px;
@@ -423,7 +427,7 @@ body{
         align-items: flex-start;
         font-size: 24px;
 
-        width: 220px;
+        width: 250px;
     }
     
         header img{
@@ -431,17 +435,23 @@ body{
         width: 32px;
     }
 
+    .gallery{
+        height: 600px;
+    }
+
     #dialogImg img{
         height: 375px;
-        width: 220px;
+        width: 300px;
+        object-fit: cover;
     }
 
     #dialogImg{
         display: flex;
         justify-content: center;
         align-items: center;
+        object-fit: cover;
 
-        width: 220px;
+        width: 300px;
     }
 
     footer{
