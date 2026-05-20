@@ -30,6 +30,7 @@ header{
     color: white;
     background-color: #09212A;
     gap: 8px;
+    max-width: 1440px;
 
     .p{
         font-size: 32px;
@@ -154,7 +155,7 @@ dialog{
         color: white;
         gap: 32px;
         height: 600px;
-        width: 300px;
+        width: 100%;
     }
 
     header{
@@ -192,6 +193,7 @@ dialog{
 
         gap: 30px;
         width: 70%;
+        margin-bottom: 24px;
     }
 
     button{
