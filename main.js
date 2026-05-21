@@ -53,7 +53,8 @@ if (currentNow < 0){
 }
 
 function openDialog(k) {
-    dialogContent(k); 
+    currentNow = k;
+    dialogContent(currentNow); 
     dialogRef.showModal();
 }
 
