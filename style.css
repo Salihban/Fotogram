@@ -221,6 +221,17 @@ dialog::backdrop{
     background-color: black;
 }
 
+@media screen and (max-width: 767px) {
+    dialog{
+        header{
+            width: 100%;
+        }
+        #dialogImg{
+            object-fit: cover;
+        }
+    }
+}
+
 @media screen and (min-width: 768px) {
     dialog{
     height: 600px;
